@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#A {
+  z-index: 100;
+  position: fixed;
+  height: 56px;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  background-color: #F9F9F9;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#A > div:nth-child(1) {
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  right: 55px;
+  border-bottom: 1px solid #ECECED;
+}
+#A > div:nth-child(2) {
+  position: absolute;
+  height: 100%;
+  width: 55px;
+  right: 0px;
+  border-bottom: 1px solid #ECECED;
+  box-shadow: 50px 0px 10px 50px rgba(154, 154, 154, 0.75);
+}
+
+#B {
+  z-index: 20;
+  position: fixed;
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+  top: 0px;
+  overflow: hidden;
+}
+#B > div {
+  position: absolute;
+  width: 55px;
+  right: 0px;
+  height: 100%;
+  box-shadow: 50px 0px 10px 50px rgba(154, 154, 154, 0.75);
+}
+
+#C {
+  z-index: 10;
+  position: fixed;
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+  bottom: 0px;
+  overflow: hidden;
+}
+#C > div {
+  position: absolute;
+  width: 55px;
+  right: 0px;
+  height: 100%;
+  box-shadow: 50px 0px 10px 50px rgba(154, 154, 154, 0.75);
+}
+
+#D {
+  z-index: 90;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 55px;
+  height: 100%;
+  background: white;
+  box-shadow: 50px 0px 10px 50px rgba(154, 154, 154, 0.75);
+}
+#D > div {
+  overflow-y: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 55px;
+  height: 100vh;
+}
+#D > div > div {
+  height: 55px;
+  border-bottom: 1px solid #ECECED;
+}
+
+#E {
+  z-index: 80;
+  position: relative;
+  top: 0px;
+  width: calc(100vw - 55px);
+  background-color: white;
+}
+#E > div {
+  height: 55px;
+  border-bottom: 1px solid #ECECED;
+}
